@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #82fcca;
+  --dk-color: #54c089;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--bg-color);
+  opacity: 0.82;
+}
+
+ul.dropdown-menu.show {
+  background-color: var(--bg-color);
+}
+
+/* hero text */
+h1 {
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  color: white;
+  width: 50vw;
+}
+
+.hero-greeting::before {
+  content: "Thrill of Play";
+  animation: animate infinite 6s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  0% {
+    content: "Thrill of Play";
+  }
+  20% {
+    content: "Thrill of Play";
+  }
+  40% {
+    content: "Joy of Accord";
+  }
+  70% {
+    content: "Wonder of";
+  }
+  75% {
+    content: "Wonder of K5 Games";
+  }
+  100% {
+    content: "Wonder of K5 Games";
+  }
+}
+
+/* hero image */
+.play {
+  max-height: 90vh;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+.welcome-section {
+  border: 1px solid var(--dk-color);
+  padding: 5vw 5vw;
+  border-radius: 10px;
+  margin: 5vw 4vw;
+  width: 82vw;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-section {
+    margin: 5vw 2vw;
+    width: 86vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome-section {
+    margin: 5vw 1.5vw;
+    width: 87vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #navbarNavDropdown {
+    justify-content: flex-end;
+  }
+  h1 {
+    top: unset;
+    bottom: 5vh;
+    left: 10vw;
+    width: unset;
+  }
+  .welcome-section {
+    margin: 5vw 1vw;
+    width: 88vw;
+  }
+}
