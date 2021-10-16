@@ -160,6 +160,14 @@ h5,
 }
 
 @media screen and (min-width: 1200px) {
+  .dropdown-menu {
+    min-width: unset;
+    width: 6.5rem;
+  }
+  .dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: unset;
+  }
   h1 {
     top: unset;
     bottom: 5vh;
