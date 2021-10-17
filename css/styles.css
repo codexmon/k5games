@@ -19,6 +19,16 @@ nav {
   font-weight: bold;
 }
 
+.github-header:hover,
+.nav-link:hover .github {
+  content: url("../assets/github-green.png");
+}
+
+.linkedin-header:hover,
+.nav-link:hover .linkedin {
+  content: url("../assets/linkedin-green.png");
+}
+
 ul.dropdown-menu.show {
   background-color: var(--bg-color);
 }
@@ -184,20 +194,20 @@ h5,
 }
 
 /* Header images: */
-#header-linkedin{
-  height:1em;
-  width:auto;
+#header-linkedin {
+  height: 1em;
+  width: auto;
 }
 
-#header-github{
-  height:1em;
-  width:auto;
-  margin-top:10px
+#header-github {
+  height: 1em;
+  width: auto;
+  margin-top: 10px;
 }
 
-@media screen and (min-width:991.98px){
-  #header-linkedin{
-    margin-top:10px;
-    margin-left:6px;
+@media screen and (min-width: 991.98px) {
+  #header-linkedin {
+    margin-top: 10px;
+    margin-left: 6px;
   }
 }
