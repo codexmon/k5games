@@ -182,3 +182,22 @@ h5,
     width: 88vw;
   }
 }
+
+/* Header images: */
+#header-linkedin{
+  height:1em;
+  width:auto;
+}
+
+#header-github{
+  height:1em;
+  width:auto;
+  margin-top:10px
+}
+
+@media screen and (min-width:991.98px){
+  #header-linkedin{
+    margin-top:10px;
+    margin-left:6px;
+  }
+}
