@@ -1,6 +1,7 @@
 :root {
   --bg-color: #82fcca;
   --dk-color: #54c089;
+  --ico-color: #228d56;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   padding: 0;
 }
 
+/* header global styling */
 nav {
   background-color: var(--bg-color);
   opacity: 0.82;
@@ -38,64 +40,15 @@ ul.dropdown-menu.show {
   font-weight: bold;
 }
 
-/* hero text */
-h1 {
-  z-index: 1;
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
-  color: white;
-  width: 50vw;
+.text-link {
+  text-decoration: none;
 }
 
-.hero-greeting::before {
-  content: "Thrill of Play";
-  animation: animate infinite 6s;
-  padding-left: 10px;
-}
-
-@keyframes animate {
-  0% {
-    content: "Thrill of Play";
-  }
-  20% {
-    content: "Thrill of Play";
-  }
-  40% {
-    content: "Joy of Accord";
-  }
-  70% {
-    content: "Wonder of";
-  }
-  75% {
-    content: "Wonder of K5 Games";
-  }
-  100% {
-    content: "Wonder of K5 Games";
-  }
-}
-
-/* hero image */
-.play {
-  max-height: 90vh;
-  width: 100vw;
-  border-radius: 10px;
-}
-
-.welcome-section {
-  background-color: var(--dk-color);
-  color: white;
-  padding: 5vw 5vw;
-  border-radius: 10px;
-  margin: 5vw 4vw;
-  width: 82vw;
-}
-
+/* footer global styling */
 hr {
   margin: 10vw 4vw 2vw;
 }
 
-/* footer section */
 .footer-section {
   margin-bottom: 5vw;
 }
@@ -135,9 +88,90 @@ h5,
   color: var(--dk-color);
 }
 
+/* home page hero text */
+h1 {
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  color: white;
+  width: 50vw;
+}
+
+.hero-greeting::before {
+  content: "Thrill of Play";
+  animation: animate infinite 6s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Thrill of Play";
+  }
+  20% {
+    content: "Thrill of Play";
+  }
+  40% {
+    content: "Joy of Accord";
+  }
+  70% {
+    content: "Wonder of";
+  }
+  75% {
+    content: "Wonder of K5 Games";
+  }
+  100% {
+    content: "Wonder of K5 Games";
+  }
+}
+
+/* about page hero text */
+.about-greeting::before {
+  content: "Me";
+  animation: slidein infinite 3s;
+}
+
+/* hero image */
+.play {
+  max-height: 90vh;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+@keyframes slidein {
+  0% {
+    content: "Me";
+  }
+  50% {
+    content: "Games";
+  }
+  75% {
+    content: "K5 Games";
+  }
+}
+
+.welcome-section {
+  background-color: var(--dk-color);
+  color: white;
+  padding: 5vw 5vw;
+  border-radius: 10px;
+  margin: 5vw 4vw;
+  width: 82vw;
+}
+
+.about-games-section {
+  padding: 5vw 5vw;
+  border: 1px solid var(--dk-color);
+  border-radius: 10px;
+  /* margin: 5vw 4vw; */
+  width: 82vw;
+}
+
 @media screen and (min-width: 768px) {
   .welcome-section {
     margin: 5vw 2vw;
+    width: 86vw;
+  }
+  .about-games-section {
     width: 86vw;
   }
   hr {
@@ -162,6 +196,9 @@ h5,
   }
   .welcome-section {
     margin: 5vw 1.5vw;
+    width: 87vw;
+  }
+  .about-games-section {
     width: 87vw;
   }
   #navbarNavDropdown {
@@ -189,6 +226,9 @@ h5,
   }
   .welcome-section {
     margin: 5vw 1vw;
+    width: 88vw;
+  }
+  .about-games-section {
     width: 88vw;
   }
 }
