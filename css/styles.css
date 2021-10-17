@@ -88,6 +88,23 @@ h5,
   color: var(--dk-color);
 }
 
+/* hero image global styling */
+.play {
+  max-height: 90vh;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+/* welcome section global styling */
+.welcome-section {
+  background-color: var(--dk-color);
+  color: white;
+  padding: 5vw 5vw;
+  border-radius: 10px;
+  margin: 5vw 4vw;
+  width: 82vw;
+}
+
 /* home page hero text */
 h1 {
   z-index: 1;
@@ -130,13 +147,6 @@ h1 {
   animation: slidein infinite 3s;
 }
 
-/* hero image */
-.play {
-  max-height: 90vh;
-  width: 100vw;
-  border-radius: 10px;
-}
-
 @keyframes slidein {
   0% {
     content: "Me";
@@ -149,21 +159,30 @@ h1 {
   }
 }
 
-.welcome-section {
-  background-color: var(--dk-color);
-  color: white;
-  padding: 5vw 5vw;
-  border-radius: 10px;
-  margin: 5vw 4vw;
-  width: 82vw;
-}
-
 .about-games-section {
   padding: 5vw 5vw;
   border: 1px solid var(--dk-color);
   border-radius: 10px;
   /* margin: 5vw 4vw; */
   width: 82vw;
+}
+
+/* donate page hero text */
+.donate-greeting::before {
+  content: "Trees";
+  animation: trees infinite 3s;
+}
+
+@keyframes trees {
+  0% {
+    content: "Trees";
+  }
+  50% {
+    content: "Time";
+  }
+  75% {
+    content: "Money";
+  }
 }
 
 @media screen and (min-width: 768px) {
