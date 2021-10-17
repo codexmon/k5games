@@ -14,9 +14,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
-    <!--JQuery and load header and footer-->
+    <!--JQuery to load header and footer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+    <!-- <script>
         function correctHREFurl(){
             $("body *[href]").attr("href", function(){
                 return ($(this).attr("href").startsWith("https://")||$(this).attr("href").startsWith("http://")||$(this).attr("href").startsWith("../")?"":"../") + $(this).attr("href")
@@ -35,7 +35,7 @@
                 $('#footer-placeholder').load("includes/footer.html");
             }
         });
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- Custom JS -->
-    <script src="js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 </body>
 
 </html>

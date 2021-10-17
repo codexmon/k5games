@@ -12,28 +12,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <!--JQuery and load header and footer-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        function correctHREFurl(){
-            $("body *[href]").attr("href", function(){
-                return ($(this).attr("href").startsWith("https://")||$(this).attr("href").startsWith("http://")||$(this).attr("href").startsWith("../")?"":"../") + $(this).attr("href")
-            })
-            $("body *[src]").attr("src", function(){
-                return ($(this).attr("src").startsWith("https://")||$(this).attr("src").startsWith("http://")||$(this).attr("src").startsWith("../")?"":"../") + $(this).attr("src")
-            })
-        }
-        $(document).ready(function() {
-            if(location.href.includes("pages")){
-                $('#header-placeholder').load("../includes/header.html", correctHREFurl);
-                $('#footer-placeholder').load("../includes/footer.html", correctHREFurl);
-            }
-            else{
-                $('#header-placeholder').load("includes/header.html");
-                $('#footer-placeholder').load("includes/footer.html");
-            }
-        });
-    </script>
 </head>
 <body>
     <div id="header-placeholder"></div>
@@ -62,6 +40,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    <!--JQuery to load header and footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
 </body>
