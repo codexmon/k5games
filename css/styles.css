@@ -44,6 +44,18 @@ ul.dropdown-menu.show {
   text-decoration: none;
 }
 
+/* Header images: */
+#header-linkedin {
+  height: 1em;
+  width: auto;
+}
+
+#header-github {
+  height: 1em;
+  width: auto;
+  margin-top: 10px;
+}
+
 /* footer global styling */
 hr {
   margin: 10vw 4vw 2vw;
@@ -185,6 +197,89 @@ h1 {
   }
 }
 
+/* for Chinese character greeting */
+.bilingual-greeting::before {
+  content: "模仿";
+  animation: bilingual infinite 3s;
+}
+
+@keyframes bilingual {
+  0% {
+    content: "模仿";
+  }
+  50% {
+    content: "画画";
+  }
+  75% {
+    content: "说话";
+  }
+}
+
+/* for pinyin greeting */
+.pinyin-greeting {
+  font-size: 1.2rem;
+  position: relative;
+  top: calc(-1rem + 1vw);
+}
+.pinyin-greeting::before {
+  content: "mófǎng";
+  animation: pinyin infinite 3s;
+}
+
+@keyframes pinyin {
+  0% {
+    content: "mófǎng";
+  }
+  50% {
+    content: "huà huà";
+  }
+  75% {
+    content: "shuōhuà";
+  }
+}
+
+/* english page hero text */
+.english-greeting::before {
+  content: "Mime";
+  animation: english infinite 3s;
+}
+
+@keyframes english {
+  0% {
+    content: "Mime";
+  }
+  50% {
+    content: "Draw";
+  }
+  75% {
+    content: "Speak";
+  }
+}
+
+/* buddhist page hero text */
+.buddhist-greeting-wrapper {
+  border: 1px solid var(--dk-color);
+  border-radius: 10px;
+  margin: 1px;
+}
+
+.buddhist-greeting::before {
+  content: "Commune";
+  animation: buddhist infinite 3s;
+}
+
+@keyframes buddhist {
+  0% {
+    content: "Commune";
+  }
+  50% {
+    content: "Dialogue";
+  }
+  75% {
+    content: "Study";
+  }
+}
+
 @media screen and (min-width: 768px) {
   .welcome-section {
     margin: 5vw 2vw;
@@ -192,6 +287,9 @@ h1 {
   }
   .about-games-section {
     width: 86vw;
+  }
+  .pinyin-greeting {
+    font-size: calc(1.2rem + 2.5vw);
   }
   hr {
     margin: 0vw 3vw 3vw;
@@ -206,6 +304,13 @@ h1 {
   .footer-nav {
     padding: 0;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 991.98px) {
+  #header-linkedin {
+    margin-top: 10px;
+    margin-left: 6px;
   }
 }
 
@@ -240,6 +345,10 @@ h1 {
     left: 10vw;
     width: unset;
   }
+  /* bilingual page hero text */
+  .bilingual-greeting-wrapper {
+    bottom: -2vh;
+  }
   hr {
     margin-bottom: 3vw;
   }
@@ -250,23 +359,8 @@ h1 {
   .about-games-section {
     width: 88vw;
   }
-}
-
-/* Header images: */
-#header-linkedin {
-  height: 1em;
-  width: auto;
-}
-
-#header-github {
-  height: 1em;
-  width: auto;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 991.98px) {
-  #header-linkedin {
-    margin-top: 10px;
-    margin-left: 6px;
+  .pinyin-greeting {
+    top: -3rem;
+    font-size: calc(1.2rem + 1.5vw);
   }
 }
