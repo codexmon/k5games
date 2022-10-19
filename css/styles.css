@@ -4,6 +4,10 @@
   --ico-color: #228d56;
 }
 
+.width100Percent {
+  width: 100%;
+}
+
 body {
   background-color: var(--bg-color);
   margin-left: 5vw;
